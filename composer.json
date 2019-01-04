@@ -7,6 +7,12 @@
     "license": "Apache-2.0",
     "authors": [
         {
+            "name": "Maksym Karazieiev",
+            "email": "mkarazeev@gmail.com",
+            "homepage": "",
+            "role": "Developer"
+        },
+        {
             "name": "David Engel",
             "email": "david@airshipdevelopment.com",
             "homepage": "",
