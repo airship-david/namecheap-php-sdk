@@ -31,7 +31,7 @@ namespace Namecheap\Command\Domains
 			$this->domains = array();
 			foreach ($this->_response->DomainCheckResult as $entry)
 			{
-				$this->domains[(string) $entry['Domain']] = ('true' == strtolower((string) $entry['Available'])) ? true : false;
+				$this->domains[(string) $entry['Domain']] = ('true' == strtolower((string) $entry['Available']) && 'false' == strtolower((string) $entry['IsPremiumName'])) ? true : false;
 			}
 		}
 

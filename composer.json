@@ -1,14 +1,14 @@
 {
-    "name": "karazieiev/namecheap-php-sdk",
+    "name": "airship-david/namecheap-php-sdk",
     "type": "library",
     "description": "Namecheap API",
     "keywords": ["api","namecheap"],
-    "homepage": "https://github.com/speedster-kiev/namecheap-php-sdk",
+    "homepage": "https://github.com/airship-david/namecheap-php-sdk",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Maksym Karazieiev",
-            "email": "mkarazeev@gmail.com",
+            "name": "David Engel",
+            "email": "david@airshipdevelopment.com",
             "homepage": "",
             "role": "Developer"
         }
