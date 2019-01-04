@@ -31,7 +31,7 @@ namespace Namecheap\Command\Domains
 			$this->domains = array();
 			foreach ($this->_response->DomainCheckResult as $entry)
 			{
-				$this->domains[(string) $entry['Domain']] = ('true' == strtolower((string) $entry['Available'])) ? true : false;
+				$this->domains[(string) $entry['Domain']] = ('true' == strtolower((string) $entry['Available']) && 'false' == strtolower((string) $entry['IsPremiumName'])) ? true : false;
 			}
 		}
 
@@ -61,8 +61,6 @@ namespace Namecheap\Command\Domains
 		 * Check if the domain is available from the returned api result. Will return false if the domain is not set
 		 * @param string $domain
 		 * @return bool
-		 * @throws
-		 * @throws Check\Exception
 		 */
 		public function isAvailable($domain)
 		{
